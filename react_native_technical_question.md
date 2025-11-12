@@ -434,7 +434,7 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
 ```
 ## Android Specific
 
-* what is Android activity lifecycle?
+## what is Android activity lifecycle?
 * similar React native in android we have 
   onCreate
   onStart
@@ -442,4 +442,27 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
   onPause
   onStop
   onDestroy
- 
+  
+## What are key steps in publishing an app to Play Store?
+
+ * Sign the APK, set version codes, upload to Google Play Console, provide app details, and roll out to production
+
+
+## Debugging & QA
+
+## How do you debug React Native apps & Android , IOS?
+
+* Use Logcat for Android logs 
+* Use Flipper or React Native Debugger for JS inspection, network tracking, and performance profiling.
+* User Xcode for Ios 
+
+
+## How do you detect and fix memory leaks in a React Native app?
+
+## Detection:
+* Use Flipper Memory plugin, React DevTools Profiler, or platform tools like LeakCanary (Android) and Instruments (iOS) to spot increasing memory
+  usage or uncollected objects.
+
+## Fixing:
+* Clean up event listeners, timers, and subscriptions in useEffect cleanup, cancel ongoing API calls, avoid stale closures, and ensure screens
+  unmount properly to free memory.
