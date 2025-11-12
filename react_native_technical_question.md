@@ -432,3 +432,14 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
 
 ```
 ```
+## Android Specific
+
+* what is Android activity lifecycle?
+* similar React native in android we have 
+  onCreate
+  onStart
+  onResume
+  onPause
+  onStop
+  onDestroy
+ 
