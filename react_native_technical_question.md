@@ -427,43 +427,59 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
 
 * Cache images using `react-native-fast-image`
 * Use file system APIs to store temporary files
-
 ---
-
 ## Android Specific
 
-## what is Android activity lifecycle?
-* similar React native in android we have 
-  onCreate
-  onStart
-  onResume
-  onPause
-  onStop
-  onDestroy
----
-## What are key steps in publishing an app to Play Store?
+### What is the Android Activity Lifecycle?
 
-* Sign the APK, set version codes, upload to Google Play Console, provide app details, and roll out to production
-  
+The Android activity lifecycle consists of several key methods:
+
+- `onCreate`
+- `onStart`
+- `onResume`
+- `onPause`
+- `onStop`
+- `onDestroy`
+
+These methods are similar to lifecycle hooks in React Native, managing the state and behavior of an activity as it moves through its lifecycle.
+
+---
+
+## Publishing to the Play Store
+
+### What are the key steps in publishing an app to the Play Store?
+
+1. Sign the APK or App Bundle.
+2. Set version codes and version names.
+3. Upload the build to the Google Play Console.
+4. Provide app details (description, screenshots, icons, etc.).
+5. Roll out the release to production.
+
 ---
 
 ## Debugging & QA
 
-## How do you debug React Native apps & Android , IOS?
+### How do you debug React Native apps on Android and iOS?
 
-* Use Logcat for Android logs 
-* Use Flipper or React Native Debugger for JS inspection, network tracking, and performance profiling.
-* User Xcode for Ios
+- Use **Logcat** for Android logs.
+- Use **Flipper** or **React Native Debugger** for JavaScript inspection, network tracking, and performance profiling.
+- Use **Xcode** for iOS debugging.
 
 ---
 
-## How do you detect and fix memory leaks in a React Native app?
+## Memory Leak Detection & Fixes
 
-## Detection:
-* Use Flipper Memory plugin, React DevTools Profiler, or platform tools like LeakCanary (Android) and Instruments (iOS) to spot increasing memory
-  usage or uncollected objects.
+### How do you detect and fix memory leaks in a React Native app?
 
-## Fixing:
-* Clean up event listeners, timers, and subscriptions in useEffect cleanup, cancel ongoing API calls, avoid stale closures, and ensure screens
-  unmount properly to free memory.
+**Detection:**
+
+- Use Flipper Memory plugin, React DevTools Profiler, or platform tools like LeakCanary (Android) and Instruments (iOS) to spot increasing memory usage or uncollected objects.
+
+**Fixing:**
+
+- Clean up event listeners, timers, and subscriptions in `useEffect` cleanup functions.
+- Cancel ongoing API calls when components unmount.
+- Avoid stale closures.
+- Ensure screens unmount properly to free memory.
+
 ---
