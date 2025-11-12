@@ -454,6 +454,7 @@ These methods are similar to lifecycle hooks in React Native, managing the state
 3. Upload the build to the Google Play Console.
 4. Provide app details (description, screenshots, icons, etc.).
 5. Roll out the release to production.
+7. key store shoule match always or else playconsole will denay it
 
 ---
 
