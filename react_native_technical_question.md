@@ -445,7 +445,12 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
   
 ## What are key steps in publishing an app to Play Store?
 
- * Sign the APK, set version codes, upload to Google Play Console, provide app details, and roll out to production
+
+
+* Sign the APK, set version codes, upload to Google Play Console, provide app details, and roll out to production
+
+
+
 
 
 ## Debugging & QA
@@ -454,7 +459,7 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
 
 * Use Logcat for Android logs 
 * Use Flipper or React Native Debugger for JS inspection, network tracking, and performance profiling.
-* User Xcode for Ios 
+* User Xcode for Ios
 
 
 ## How do you detect and fix memory leaks in a React Native app?
