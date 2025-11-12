@@ -440,10 +440,12 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
   onPause
   onStop
   onDestroy
-  
+---
 ## What are key steps in publishing an app to Play Store?
 
 * Sign the APK, set version codes, upload to Google Play Console, provide app details, and roll out to production
+  
+---
 
 ## Debugging & QA
 
@@ -453,6 +455,7 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
 * Use Flipper or React Native Debugger for JS inspection, network tracking, and performance profiling.
 * User Xcode for Ios
 
+---
 
 ## How do you detect and fix memory leaks in a React Native app?
 
@@ -463,3 +466,4 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
 ## Fixing:
 * Clean up event listeners, timers, and subscriptions in useEffect cleanup, cancel ongoing API calls, avoid stale closures, and ensure screens
   unmount properly to free memory.
+---
