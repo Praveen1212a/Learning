@@ -430,8 +430,6 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
 
 ---
 
-```
-```
 ## Android Specific
 
 ## what is Android activity lifecycle?
@@ -445,13 +443,7 @@ NetInfo.addEventListener(state => console.log(state.isConnected));
   
 ## What are key steps in publishing an app to Play Store?
 
-
-
 * Sign the APK, set version codes, upload to Google Play Console, provide app details, and roll out to production
-
-
-
-
 
 ## Debugging & QA
 
