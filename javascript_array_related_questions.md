@@ -66,6 +66,12 @@ function lastNonRepeatingChar(str) {
     }
   }
 
+  for(let i of seen){
+  if(!repeated.includes(i)){
+  return i
+  }
+  }
+
   for (let i = seen.length - 1; i >= 0; i--) {
     if (!repeated.includes(seen[i])) {
       return seen[i];
